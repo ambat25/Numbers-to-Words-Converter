@@ -1,0 +1,19 @@
+{
+  "name": "numbers-to-words-converter",
+  "version": "1.0.0",
+  "description": "this project converts a number from its numerical form to alphabetical text.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ambat25/Numbers-to-Words-Converter.git"
+  },
+  "author": "ambat25",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ambat25/Numbers-to-Words-Converter/issues"
+  },
+  "homepage": "https://github.com/ambat25/Numbers-to-Words-Converter#readme"
+}

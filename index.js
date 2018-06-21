@@ -1,8 +1,13 @@
-// var numb ="100,699,958,100,002";
+/*!
+ * convert <https://github.com/ambat25/Numbers-to-Words-Converter>
+ *
+ * Licensed under the MIT License.
+ */
 
-// console.log(convert(numb));
+'use strict';
 
-function convert(num){
+module.exports = function convert(num) {
+
     var finalText = '';
     var num =num.split(',');
     for (let index = 0; index < num.length; index++) {
@@ -34,11 +39,11 @@ function convert(num){
                 return '';
                 break;
         }
-    }
+    }    
 
     for (let index = 0; index < num.length; index++) {
         var tempText = '';
-        tempNum = num[index];
+        var tempNum = num[index];
         var unit = tempNum[2];
         var tens = tempNum[1];
         var hundred = tempNum[0];
@@ -154,31 +159,31 @@ function convert(num){
 
         switch(hundred){
             case '1':
-                hundredWord="one hundred ";
+                hundredWord="one hundred";
                 break;
             case '2':
-                hundredWord="two hundred ";
+                hundredWord="two hundred";
                 break;
             case '3':
-                hundredWord="three hundred ";
+                hundredWord="three hundred";
                 break;
             case '4':
-                hundredWord="four hundred ";
+                hundredWord="four hundred";
                 break;
             case '5':
-                hundredWord="five hundred ";
+                hundredWord="five hundred";
                 break;
             case '6':
-                hundredWord="six hundred ";
+                hundredWord="six hundred";
                 break;
             case '7':
-                hundredWord="seven hundred ";
+                hundredWord="seven hundred";
                 break;
             case '8':
-                hundredWord="eight hundred ";
+                hundredWord="eight hundred";
                 break;
             case '9':
-                hundredWord="nine hundred ";
+                hundredWord="nine hundred";
                 break;
         }
         
@@ -233,5 +238,7 @@ function convert(num){
         finalText += ff[flag] + assingLabel(index);
         flag++;
     }
-    return (finalText.toUpperCase().trim());
-}
+
+    return (finalText.toLowerCase().trim());
+
+};
